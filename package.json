@@ -1,0 +1,66 @@
+{
+  "private": true,
+  "scripts": {
+    "lint": "npm run lint:js && npm run lint:style && npm run lint:prettier",
+    "lint-staged": "lint-staged && node ./.script/genBlockConfig.js&& git add ./umi-block.json",
+    "lint-staged:js": "eslint --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty  ./ && npm run lint:style",
+    "lint:js": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./",
+    "lint:prettier": "prettier --check \"**/*\" --end-of-line auto",
+    "lint:style": "stylelint --fix \"**/*.less\" --syntax less",
+    "prettier": "prettier -c --write \"**/*\"",
+    "screenshot": "pro screenshot",
+    "start": "umi dev",
+    "test": "umi test"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "echo good luck"
+    }
+  },
+  "lint-staged": {
+    "**/*.less": "stylelint --syntax less",
+    "**/*.{js,jsx,tsx,ts,less,md,json}": [
+      "prettier --write",
+      "git add"
+    ],
+    "**/*.{js,jsx}": "npm run lint-staged:js",
+    "**/*.{js,ts,tsx}": "npm run lint-staged:js"
+  },
+  "peerDependencies": {
+    "@ant-design/pro-layout": "^6.3.0"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.2.2",
+    "@ant-design/pro-cli": "^1.0.22",
+    "@ant-design/pro-layout": "^6.3.0",
+    "antd": "^4.5.2",
+    "numeral": "^2.0.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "umi": "3.2.14",
+    "umi-request": "^1.3.5"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.10",
+    "@types/numeral": "^0.0.28",
+    "@types/react-dom": "^16.9.8",
+    "@umijs/fabric": "^2.2.2",
+    "@umijs/plugin-block-devtool": "^1.2.3",
+    "@umijs/preset-ant-design-pro": "^1.2.2",
+    "@umijs/preset-react": "^1.5.19",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.6.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "mockjs": "^1.1.0",
+    "prettier": "^2.0.5",
+    "stylelint": "^13.6.1",
+    "typescript": "^3.9.7"
+  },
+  "checkFiles": [
+    "**/*.ts*",
+    "**/*.less",
+    "**/*.md"
+  ]
+}
