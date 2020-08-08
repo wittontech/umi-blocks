@@ -1,0 +1,30 @@
+{
+  "name": "@umi-block/data-grid",
+  "version": "0.0.1",
+  "description": "Data grid component with CRUD operations",
+  "main": "src/index.js",
+  "authors": {
+    "name": "Witton",
+    "email": "wendeng.zhao@sayweee.com"
+  },
+  "repository": "wittontech/umi-blocks/DataGrid",
+  "scripts": {
+    "dev": "umi dev"
+  },
+  "dependencies": {
+    "react": ">=16.13.1",
+    "@ant-design/icons": "^4.2.2",
+    "@ant-design/pro-table": "^2.4.2",
+    "antd": "^4.5.2"
+  },
+  "peerDependencies": {
+    "@ant-design/pro-layout": "^6.3.0"
+  },
+  "devDependencies": {
+    "umi": "^3.2.14"
+  },
+  "blockConfig": {
+    "specVersion": "0.1"
+  },
+  "license": "ISC"
+}
