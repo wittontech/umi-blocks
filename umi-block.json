@@ -18,7 +18,7 @@
       "url": "https://github.com/wittontech/umi-blocks/tree/master/DataGrid",
       "path": "DataGrid",
       "features": ["antd"],
-      "img": "https://raw.githubusercontent.com/wittontech/umi-blocks/master/Horizon/snapshot.png?raw=true",
+      "img": "https://raw.githubusercontent.com/wittontech/umi-blocks/master/DataGrid/snapshot.png?token=AP4XP732XIZNV5XDIEFSOSS7FZKRU",
       "tags": ["CRUD", "Table", "Grid", "List"],
       "previewUrl": "https://preview.pro.ant.design"
     }
