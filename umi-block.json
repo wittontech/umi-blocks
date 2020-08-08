@@ -1,0 +1,26 @@
+{
+  "list": [
+    {
+      "key": "Horizon",
+      "name": "样板区块组件",
+      "description": "一个空白的页面，一切都从这里开始！",
+      "url": "https://github.com/wittontech/umi-blocks/tree/master/Horizon",
+      "path": "Horizon",
+      "features": ["antd"],
+      "img": "https://raw.githubusercontent.com/wittontech/umi-blocks/master/Horizon/snapshot.png?raw=true",
+      "tags": ["起始组件"],
+      "previewUrl": "https://preview.pro.ant.design"
+    },
+    {
+      "key": "DataGrid",
+      "name": "CRUD数据网格",
+      "description": "数据列表模块，支持数据项的增删改查操作",
+      "url": "https://github.com/wittontech/umi-blocks/tree/master/DataGrid",
+      "path": "DataGrid",
+      "features": ["antd"],
+      "img": "https://raw.githubusercontent.com/wittontech/umi-blocks/master/Horizon/snapshot.png?raw=true",
+      "tags": ["CRUD", "Table", "Grid", "List"],
+      "previewUrl": "https://preview.pro.ant.design"
+    }
+  ]
+}
