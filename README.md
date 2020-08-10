@@ -15,7 +15,7 @@
 
 ## 区块使用
 在项目中使用自定义区块分为以下几个步骤
-1. 项目中添加`@umijs/plugin-blocks`开发依赖
+1. 项目中添加`@umijs/plugin-blocks`开发依赖，`package.json`的`devDependecies`中添加`"@umijs/plugin-blocks": "^2.2.1",`
 1. 确定区块名称和仓库地址，要到代码目录地址，例如上一节开发的`Yosemite`区块，访问链接是`https://github.com/wittontech/umi-blocks/tree/master/Yosemite`
 1. 使用添加区块命令`umi block add  https://github.com/wittontech/umi-blocks/tree/master/Yosemite --closeFastGithub=true --path=/places/yosemite`
    > `--closeFastGithub`指定我们使用自定义GitHub仓库，否则会走默认区块仓库查找，必然找不到，***非常重要***。`--path`指定该区块在新项目中的route
