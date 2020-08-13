@@ -8,7 +8,7 @@
       "path": "Horizon",
       "features": ["antd"],
       "img": "https://raw.githubusercontent.com/wittontech/umi-blocks/master/Horizon/snapshot.png?raw=true",
-      "tags": ["起始组件"],
+      "tags": ["空白页"],
       "previewUrl": "https://preview.pro.ant.design"
     },
     {
@@ -19,7 +19,7 @@
       "path": "DataGrid",
       "features": ["antd"],
       "img": "https://raw.githubusercontent.com/wittontech/umi-blocks/master/DataGrid/snapshot.png?token=AP4XP732XIZNV5XDIEFSOSS7FZKRU",
-      "tags": ["CRUD", "Table", "Grid", "List"],
+      "tags": ["表格"],
       "previewUrl": "https://preview.pro.ant.design"
     }
   ]
